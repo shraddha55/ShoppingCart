@@ -1,7 +1,10 @@
 # shop-project
 
-> A Vue.js project
+> Vuex+ Firebase + Vue-router = Shopping Cart 
 
+
+> A Vue.js project
+  
 ## Build Setup
 
 ``` bash
