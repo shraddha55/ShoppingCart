@@ -1,7 +1,7 @@
 # shop-project
 
 > Vuex+ Firebase + Vue-router = Shopping Cart 
-
+> [Demo] (https://shoppingcart-f462e.firebaseapp.com/)
 
 > A Vue.js project
   
