@@ -6,9 +6,7 @@
       :item="item"
       :key="item.id">
     </shopping-cart-item>
-
     <shopping-cart-summary></shopping-cart-summary>
-
     <div class="mt-1 text-xs-center">
       <button class="btn btn-success"
         :disabled="orderOnLimit"

@@ -11,14 +11,13 @@ import VueFire from 'vuefire'
 import firebase from 'firebase'
 import VueRouter from 'vue-router'
 import { routes } from './routes'
-
+import Paginate from 'vuejs-paginate'
 
 Vue.config.productionTip = false
 Vue.use(VueFire)
 Vue.use(VueRouter)
-
+Vue.use(Paginate)
 Vue.filter('formatMoney', accounting.formatMoney) 
- 
 
 const router = new VueRouter({
    mode: 'history',

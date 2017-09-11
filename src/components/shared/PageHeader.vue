@@ -2,7 +2,7 @@
   <nav class="navbar navbar-light bg-faded" v-if="profile.limit "style="background-color:#DC143C"> 
    <div class="container">
       <a class="navbar-brand" href="/" id="color-me"><b>
-       <img v-bind:src="img" width="30" height="30"/>
+       <img :src="require('@/assets/abeja_logo.png')" width="50" height="50"/>
        Abeja merchandise store </b> </a>       
         <span class="navbar-text float-xs-right">
        <router-link to="/Cart" class="btn btn-primary navbar-btn" tag="button">Cart</router-link>

@@ -7,7 +7,6 @@
         <product-list></product-list>
       </div>
      </div>
-
     </div>
   </div>
 </template>

@@ -1,3 +1,7 @@
+var StateTax = 0.005;
+var Discount = 0.7;
+
+
 export const cartProducts = state => {
   return state.shoppingCart.added.map(({ id, quantity }) => {
     const product =
@@ -23,10 +27,10 @@ export const subtotal = state => {
     return subtotal + item.price * item.quantity
   }, 0)
 
-  return state.shoppingCart.productDiscount ? sum * 0.7 : sum
+  return state.shoppingCart.productDiscount ? sum * Discount: sum
 }
 
-export const taxes = state => subtotal(state) * 0.005
+export const taxes = state => subtotal(state) * StateTax
 
 export const shipping = state => {
   const shippings = cartProducts(state).map(item => item.shipping)
@@ -44,4 +48,3 @@ export const total = state => {
 }
 
 export const orderOnLimit = state => state.profile.data.limit <= total(state)
-

@@ -1,7 +1,7 @@
 <template>
   <div class="media mb-1">
     <div class="media-left">
-      <img class="media-object rounded" src="http://placehold.it/50x50" :alt="item.title">
+      <img class="media-object rounded" :src="require('@/assets/abeja_logo1.png')" width="50" height="50" :alt="item.title"/>
     </div>
     <div class="media-body">
       <strong class="d-block">{{item.title}}</strong>
@@ -17,7 +17,8 @@
 import RemoveFromCart from './../products/RemoveFromCart'
 export default {
   props: {
-    item: Object
+    item: Object,
+    product: Object
   },
   components: { RemoveFromCart }
 }

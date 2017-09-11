@@ -2,7 +2,7 @@
   <div>
     <h1><b>Abeja Products</b></h1>
     <div class="row" v-for="row in productRows">
-      <div class="col-sm-3" v-for="product in row">
+      <div class="col-sm-6 col-xs-12 col-md-4 col-lg-3" v-for="product in row">
         <product
           :product="product"
           track-by="id">

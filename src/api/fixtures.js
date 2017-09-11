@@ -24,7 +24,7 @@ const promotions = [
   { 'id': 1, 'title': '50% OFF' },
   { 'id': 2, 'title': 'Guest Benefits' },
   { 'id': 3, 'title': 'Employee Benefit' },
-  { 'id': 4, 'title': '+ ¥1000.00 on limit' }
+  { 'id': 4, 'title': '+ $1000.00 on limit' }
 ]
 
 // Simulate requests
@@ -35,9 +35,9 @@ export default {
   },
   
   getProducts(cb){
-        ref.on('value', function(snapshot){
-           setTimeout(() => cb(snapshot.val()), 200)
-            });
+    ref.on('value', function(snapshot){
+      setTimeout(() => cb(snapshot.val()), 200)
+      });
   },
 
   getPromotions (cb) {

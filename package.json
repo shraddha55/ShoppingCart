@@ -22,6 +22,7 @@
     "vue-chunk": "^1.0.0",
     "vue-router": "^2.6.0",
     "vuefire": "^1.4.3",
+    "vuejs-paginate": "^1.2.0",
     "vuex": "^2.3.1",
     "webpack-build-logger": "0.0.5"
   },
