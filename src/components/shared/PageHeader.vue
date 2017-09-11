@@ -1,24 +1,19 @@
 <template>
   <nav class="navbar navbar-light bg-faded" v-if="profile.limit "style="background-color:#DC143C"> 
    <div class="container">
-
-
-      <a class="navbar-brand" href="/" id="color-me"><b> Abeja merchandise store </b> </a>
-        
+      <a class="navbar-brand" href="/" id="color-me"><b>
+       <img v-bind:src="img" width="30" height="30"/>
+       Abeja merchandise store </b> </a>       
         <span class="navbar-text float-xs-right">
        <router-link to="/Cart" class="btn btn-primary navbar-btn" tag="button">Cart</router-link>
         <router-link to="/" class="btn btn-success navbar-btn" tag="button">Store</router-link> 
     </span>
     </div>
-    <div class="container">
-   
-     
+    <div class="container">   
         <span class="navbar-text float-xs-right" id="color-text">
         Hello <strong>{{fullName}}</strong>, your credit limit is
          <shopping-cart-limit :limit="profile.limit"></shopping-cart-limit>
         </span>
-     
-     
     </div>
   </nav>
 </template>
@@ -27,6 +22,7 @@
 import ShoppingCartLimit from './../shop/shopping-cart/ShoppingCartLimit'
 import { mapActions, mapState } from 'vuex'
 import Cart from './../shop/cart-tab'
+import img from './../../assets/abeja_logo.png'
 
 export default {
   computed: {

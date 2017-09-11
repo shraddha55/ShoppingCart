@@ -1,13 +1,11 @@
 <template>
   <div id= "color-bg">
     <div class="container">
-      <coupons></coupons>
-  
-        <div class="col-sm-3">
+      <coupons></coupons> 
+        <div class="col">
           <shopping-cart></shopping-cart>
-        
+        </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -29,7 +27,7 @@ export default {
 
   #color-bg{
 
-    background-color: #39CCCC;
+    background-color: #fefbf7;
 
   }
 </style>

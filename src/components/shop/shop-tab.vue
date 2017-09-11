@@ -28,6 +28,6 @@ export default {
 
 <style>
   #color-bg{  
-   background-color: #39CCCC;
+   background-color: #fefbf7;
   }
 </style>

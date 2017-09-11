@@ -1,7 +1,6 @@
 <template>
   <div>
     <h3>Cart</h3>
-
     <shopping-cart-item
       v-for="item in items"
       :item="item"
@@ -13,10 +12,10 @@
     <div class="mt-1 text-xs-center">
       <button class="btn btn-success"
         :disabled="orderOnLimit"
-        @click="buy">
+        @click="buy"> 
         Checkout
       </button>
-      <p v-if="orderOnLimit">Order is over limit.</p>
+      <p v-if="orderOnLimit"> Order is over limit. </p>
     </div>
   </div>
 </template>
@@ -25,6 +24,7 @@
 import ShoppingCartItem from './ShoppingCartItem'
 import ShoppingCartSummary from './ShoppingCartSummary'
 import { mapGetters } from 'vuex'
+
 export default {
   computed: mapGetters({
     items: 'cartProducts',
@@ -35,9 +35,9 @@ export default {
     ShoppingCartSummary
   },
   methods: {
-    buy () {
-      window.alert('You bought :)')
-      window.location.reload()
+    buy() { 
+      window.alert('Thank you for shopping at Abeja')
+      window.location.reload()  
     }
   }
 }

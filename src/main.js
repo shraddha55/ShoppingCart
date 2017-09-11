@@ -18,7 +18,7 @@ Vue.use(VueFire)
 Vue.use(VueRouter)
 
 Vue.filter('formatMoney', accounting.formatMoney) 
-// Vue.filter('pluralize', pluralize)  
+ 
 
 const router = new VueRouter({
    mode: 'history',
